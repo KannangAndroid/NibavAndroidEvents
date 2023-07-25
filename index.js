@@ -9,7 +9,7 @@ import http from 'http';
 
 export const config = {
   databaseURI:
-    process.env.DATABASE_URI || process.env.MONGODB_URI || 'mongodb+srv://kannang:aaa123456@nibav.zvheyxp.mongodb.net/kannan',
+    process.env.DATABASE_URI || process.env.MONGODB_URI || 'postgres://events:aaa123456@postgresql-135704-0.cloudclusters.net:19820/Nibav-Event',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
   appId: process.env.APP_ID || 'nibav-staging',
   masterKey: process.env.MASTER_KEY || 'lncPLVCkjb3sk24324knvdncvKJN', //Add your master key here. Keep it secret!
